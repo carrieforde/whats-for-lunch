@@ -18,7 +18,7 @@ function App() {
             <h1>Click for restaurant</h1>
             <Button
               style="flat"
-              bgColor="--color-secondary-300"
+              bgColor="--color-secondary-200"
               color="--color-secondary-900"
               onClick={selectRestaurant}
             >
