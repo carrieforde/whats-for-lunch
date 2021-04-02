@@ -10,9 +10,23 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
+export const Flat = Template.bind({});
+export const Outline = Template.bind({});
+export const Text = Template.bind({});
 
-Default.args = {
+Flat.args = {
   onClick: () => console.log("clicked"),
   children: ["Get Restaurant"],
+  bgColor: "--color-secondary-300",
+  color: "--color-secondary-900",
+};
+
+Outline.args = {
+  ...Flat.args,
+  style: "outline",
+};
+
+Text.args = {
+  ...Flat.args,
+  style: "text",
 };

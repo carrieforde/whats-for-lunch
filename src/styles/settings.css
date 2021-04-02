@@ -83,6 +83,11 @@
   --color-success-800: #07600e;
   --color-success-900: #014807;
 
+  /* Palette */
+  --color-primary: var(--color-primary-800);
+  --color-secondary: var(--color-secondary-300);
+  --color-accent: var(--color-accent-200);
+
   /* Fonts */
   --font-family-body: "Libre Franklin", sans-serif;
 

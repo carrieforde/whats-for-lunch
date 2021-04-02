@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import restaurants from '../../data/restaurants.json';
+import { useEffect, useState } from "react";
+import restaurants from "../../data/restaurants.json";
 
 const useRestaurants = () => {
   const [restaurantList, updateRestaurantList] = useState<string[] | undefined>(
