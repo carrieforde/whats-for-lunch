@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Restaurant } from "../../entities/restaurant.interface";
 import useFirebaseCollection from "../useFirebaseCollection/useFirebaseCollection";
 
-const useRestaurants = () => {
+const useRestaurants = (): any => {
   const {
     data: restaurantList,
   }: { data: Restaurant[] | null } = useFirebaseCollection("restaurants");
@@ -23,7 +23,9 @@ const useRestaurants = () => {
   };
 
   const getRestaurantPhoto = () => {
-    return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${restaurant.photo}&key=${process.env.REACT_APP_GOOGLE_API_KEY}`;
+    return selected?.photo
+      ? `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${selected.photo}&key=${process.env.REACT_APP_GOOGLE_API_KEY}`
+      : "";
   };
 
   return {

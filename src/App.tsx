@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import Button from "./components/Button/Button";
 import useRestaurants from "./hooks/useRestaurants/useRestaurants";
 
-function App() {
+function App(): ReactElement {
   const { selected, selectRestaurant } = useRestaurants();
 
   return (
