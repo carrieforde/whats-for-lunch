@@ -1,0 +1,30 @@
+{
+  "name": "Zen Noodle Bar",
+  "address": {
+    "street": "668 E 3rd Ave",
+    "city": "San Mateo",
+    "state": "CA",
+    "zipcode": "94401"
+  },
+  "phone": "(650) 781-3183",
+  "website": "http://www.zennoodlebarca.com/?utm_source=gmb&utm_medium=website",
+  "hours": [
+    { "Sunday": { "open": "11:00", "close": "15:00" } },
+    { "Monday": { "open": "11:00", "close": "15:00" } },
+    { "Wednesday": { "open": "11:00", "close": "15:00" } },
+    { "Thursday": { "open": "11:00", "close": "15:00" } },
+    { "Friday": { "open": "11:00", "close": "15:00" } },
+    { "Saturday": { "open": "11:00", "close": "15:00" } }
+  ],
+  "place_id": "ChIJQ6_pTHqej4ARsN5gHPirK9Y",
+  "geometry": {
+    "location": { "lat": 37.5673125, "lng": -122.3192886 },
+    "viewport": {
+      "northeast": { "lat": 37.5687636299, "lng": -122.3180479701 },
+      "southwest": { "lat": 37.5660639701, "lng": -122.3207476299 }
+    }
+  },
+  "rating": 4.1,
+  "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+  "photo": "ATtYBwJEbQkWQ3DGsoYY07ohlrPVE5zUei0wshAf3AtrhFKGYz4BDVCfNL4fRlkpLb3Jvb6rg90u26Fvd76tKO9KiKFn_QRzIE2aZQkz_3nI5okkIEGr7L3AsMnCzJGMOISCJ27i7X4kjbwTwi9VwkuTIKkgS-WYLZa30BI9WYV0jlc12Wi3"
+}

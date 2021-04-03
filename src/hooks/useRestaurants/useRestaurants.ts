@@ -1,5 +1,4 @@
 import { useState } from "react";
-import restaurant from "../../data/resturant.json";
 import { Restaurant } from "../../entities/restaurant.interface";
 import useFirebaseCollection from "../useFirebaseCollection/useFirebaseCollection";
 
