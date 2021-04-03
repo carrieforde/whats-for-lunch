@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Restaurant } from "../../entities/restaurant.interface";
 import useFirebaseCollection from "../useFirebaseCollection/useFirebaseCollection";
+import { UseRestaurants } from "./useRestaurants.interface";
 
-const useRestaurants = (): any => {
+const useRestaurants = (): UseRestaurants => {
   const {
     data: restaurantList,
   }: { data: Restaurant[] | null } = useFirebaseCollection("restaurants");
