@@ -4,13 +4,16 @@ import useRestaurants from "./hooks/useRestaurants/useRestaurants";
 
 function App() {
   const { selected, selectRestaurant } = useRestaurants();
+
   return (
     <div className="App">
       <main>
         {selected && (
           <>
             <h1>On today&apos;s menu...</h1>
-            <p>{selected}</p>
+            <p>{selected.name}</p>
+
+            <pre>{JSON.stringify(selected, null, 2)}</pre>
           </>
         )}
         {!selected && (
