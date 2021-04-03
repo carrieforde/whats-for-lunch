@@ -1,11 +1,19 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import Button from "./components/Button/Button";
 import Card from "./components/Card/Card";
 import LinkButton from "./components/LinkButton/LinkButton";
 import useRestaurants from "./hooks/useRestaurants/useRestaurants";
 
+import usePlacesApi from "./hooks/usePlacesApi/usePlacesApi";
+import useRestaurants from "./hooks/useRestaurants/useRestaurants";
+
 function App(): ReactElement {
   const { selected, selectRestaurant, getRestaurantPhoto } = useRestaurants();
+  const { place, findPlace } = usePlacesApi("zen noodle bar");
+
+  useEffect(() => {
+    console.log(findPlace());
+  }, []);
 
   return (
     <div className="App">
