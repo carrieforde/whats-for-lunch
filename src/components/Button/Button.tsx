@@ -1,7 +1,6 @@
-import React, { CSSProperties } from "react";
+import React from "react";
+import { getButtonClasses, getColorSettings } from "../../utilities/utilities";
 import { ButtonProps } from "./Button.interface";
-import styles from "./Button.module.css";
-import cn from "classnames";
 
 const Button: React.FC<ButtonProps> = ({
   children,
@@ -10,15 +9,9 @@ const Button: React.FC<ButtonProps> = ({
   bgColor,
   color,
 }) => {
-  const classes = cn(styles.button, {
-    [styles.outline]: style === "outline",
-    [styles.text]: style === "text",
-  });
+  const classes = getButtonClasses({ style });
 
-  const inlineStyles = {
-    "--buttonBgColor": bgColor ? `var(${bgColor})` : "inherit",
-    "--buttonColor": color ? `var(${color})` : "inherit",
-  } as CSSProperties;
+  const inlineStyles = getColorSettings("button", { bgColor, color });
 
   return (
     <button
