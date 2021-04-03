@@ -9,11 +9,17 @@ import useRestaurants from "./hooks/useRestaurants/useRestaurants";
 
 function App(): ReactElement {
   const { selected, selectRestaurant, getRestaurantPhoto } = useRestaurants();
-  const { place, findPlace } = usePlacesApi("zen noodle bar");
+  const { places, findPlace, setSelectedPlace } = usePlacesApi("blue bottle");
 
   useEffect(() => {
-    console.log(findPlace());
+    findPlace();
   }, []);
+
+  useEffect(() => {
+    if (Array.isArray(places)) {
+      setSelectedPlace(0);
+    }
+  }, [places]);
 
   return (
     <div className="App">

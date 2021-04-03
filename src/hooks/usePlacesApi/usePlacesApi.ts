@@ -1,19 +1,18 @@
+import axios from "axios";
 import { useState } from "react";
 import { UsePlacesApi } from "./usePlacesApi.interface";
 
-import axios from "axios";
+const ENDPOINT = "/maps/api/place/findplacefromtext/json";
 
 const usePlacesApi = (entityName: string): UsePlacesApi => {
-  const [place, setPlace] = useState<UsePlacesApi>();
-
-  const PLACES_PATH = `/maps/api/place/findplacefromtext/json`;
+  const [places, setPlaces] = useState<any>(undefined);
+  const [selected, setSelected] = useState<any>(undefined);
 
   const findPlace = async () => {
     try {
-      const res = await axios({
-        method: "get",
-        url: PLACES_PATH,
-        baseURL: process.env.REACT_APP_PLACES_BASE_URL,
+      const data = await axios({
+        method: "GET",
+        url: ENDPOINT,
         params: {
           input: entityName,
           inputtype: "textquery",
@@ -25,17 +24,24 @@ const usePlacesApi = (entityName: string): UsePlacesApi => {
         },
       });
 
-      const data = res.data;
-      console.log(data);
-      setPlace(data);
+      if (data) {
+        setPlaces(data.data?.candidates);
+      }
     } catch (error) {
       console.log(error);
     }
   };
 
+  const setSelectedPlace = (index: number) => {
+    const _selected = places[index];
+    setSelected(_selected);
+  };
+
   return {
-    place,
+    places,
     findPlace,
+    selected,
+    setSelectedPlace,
   };
 };
 

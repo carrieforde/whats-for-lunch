@@ -1,4 +1,6 @@
 export interface UsePlacesApi {
-  place: any;
+  places: any;
   findPlace: () => void;
+  selected: any;
+  setSelectedPlace: (index: number) => void;
 }
