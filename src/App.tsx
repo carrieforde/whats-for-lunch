@@ -8,11 +8,11 @@ import usePlacesApi from "./hooks/usePlacesApi/usePlacesApi";
 import useRestaurants from "./hooks/useRestaurants/useRestaurants";
 
 function App(): ReactElement {
-  const { selected, selectRestaurant, getRestaurantPhoto } = useRestaurants();
-  const { places, findPlace, setSelectedPlace } = usePlacesApi("blue bottle");
+  const { selected, selectRestaurant } = useRestaurants();
+  const { places, findPlaceByName, setSelectedPlace } = usePlacesApi();
 
   useEffect(() => {
-    findPlace();
+    findPlaceByName("blue bottle");
   }, []);
 
   useEffect(() => {

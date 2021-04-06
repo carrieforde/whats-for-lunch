@@ -1,0 +1,218 @@
+{
+  "html_attributions" : [],
+  "result" : {
+     "address_components" : [
+        {
+           "long_name" : "3081",
+           "short_name" : "3081",
+           "types" : [ "street_number" ]
+        },
+        {
+           "long_name" : "South Delaware Street",
+           "short_name" : "S Delaware St",
+           "types" : [ "route" ]
+        },
+        {
+           "long_name" : "South San Mateo",
+           "short_name" : "South San Mateo",
+           "types" : [ "neighborhood", "political" ]
+        },
+        {
+           "long_name" : "San Mateo",
+           "short_name" : "San Mateo",
+           "types" : [ "locality", "political" ]
+        },
+        {
+           "long_name" : "San Mateo County",
+           "short_name" : "San Mateo County",
+           "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+           "long_name" : "California",
+           "short_name" : "CA",
+           "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+           "long_name" : "United States",
+           "short_name" : "US",
+           "types" : [ "country", "political" ]
+        },
+        {
+           "long_name" : "94403",
+           "short_name" : "94403",
+           "types" : [ "postal_code" ]
+        }
+     ],
+     "adr_address" : "\u003cspan class=\"street-address\"\u003e3081 S Delaware St\u003c/span\u003e, \u003cspan class=\"locality\"\u003eSan Mateo\u003c/span\u003e, \u003cspan class=\"region\"\u003eCA\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e94403\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eUSA\u003c/span\u003e",
+     "formatted_phone_number" : "(510) 653-3394",
+     "opening_hours" : {
+        "open_now" : false,
+        "periods" : [
+           {
+              "close" : {
+                 "day" : 0,
+                 "time" : "1800"
+              },
+              "open" : {
+                 "day" : 0,
+                 "time" : "0600"
+              }
+           },
+           {
+              "close" : {
+                 "day" : 1,
+                 "time" : "1800"
+              },
+              "open" : {
+                 "day" : 1,
+                 "time" : "0600"
+              }
+           },
+           {
+              "close" : {
+                 "day" : 2,
+                 "time" : "1800"
+              },
+              "open" : {
+                 "day" : 2,
+                 "time" : "0600"
+              }
+           },
+           {
+              "close" : {
+                 "day" : 3,
+                 "time" : "1800"
+              },
+              "open" : {
+                 "day" : 3,
+                 "time" : "0600"
+              }
+           },
+           {
+              "close" : {
+                 "day" : 4,
+                 "time" : "1800"
+              },
+              "open" : {
+                 "day" : 4,
+                 "time" : "0600"
+              }
+           },
+           {
+              "close" : {
+                 "day" : 5,
+                 "time" : "1800"
+              },
+              "open" : {
+                 "day" : 5,
+                 "time" : "0600"
+              }
+           },
+           {
+              "close" : {
+                 "day" : 6,
+                 "time" : "1800"
+              },
+              "open" : {
+                 "day" : 6,
+                 "time" : "0600"
+              }
+           }
+        ],
+        "weekday_text" : [
+           "Monday: 6:00 am – 6:00 pm",
+           "Tuesday: 6:00 am – 6:00 pm",
+           "Wednesday: 6:00 am – 6:00 pm",
+           "Thursday: 6:00 am – 6:00 pm",
+           "Friday: 6:00 am – 6:00 pm",
+           "Saturday: 6:00 am – 6:00 pm",
+           "Sunday: 6:00 am – 6:00 pm"
+        ]
+     },
+     "photos" : [
+        {
+           "height" : 1536,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/110835274214414477505\"\u003eYü Wu\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwLBZBTSVnXan6X7cvlfg8_hDQFWehGlNuRfv0wA8VOOYqNmwcNt-_KJO4rxjNDZa5V4iAKGBH0NKOrem56_GLzRoozLAGOQswMBlDLXmUaAqJO8zHRpLZxAaikDJXydeQK06bqi3sp_FSJwDCE5S0h5MqIb8VMXgysUL5ovSRmgMtrT",
+           "width" : 2048
+        },
+        {
+           "height" : 4032,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/110835274214414477505\"\u003eYü Wu\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwLutHG36lJtwsWaj8ebM8NtrdAmiryebeBoZc79etFfJFlEIH5PQVb9Y1WTC5NKkjicgUkxYSUKyzyPJEOeZwBntZOfLsxYRgYFk5A3aVRCSoo0KIjOAACCj-2j8vtJKvJ6iZPHF79pa2iNjE5n4CX8UGS0q90KCX8smP5WhQfI1a4h",
+           "width" : 3024
+        },
+        {
+           "height" : 4032,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/110835274214414477505\"\u003eYü Wu\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwLN6OH7RHtmYKm0GIOrlsIXgp2uZfr-vaUV158PpYz3mmhvk6Xlu_K7QxdMlT9Gsypw9rxunSYVqb1cemdOd9rpPRiTkX_1j0Okn6OjpuOyDgKe6kAr7bd2OpsdQp_Lz_9AFtyoR0T0es0KC4GQCxZyKRie0_iOhZbgnCOZYuQftgTD",
+           "width" : 3024
+        },
+        {
+           "height" : 750,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/118039133277707629453\"\u003eDenise Simmons\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwLib9ic7dTKNJPJoQGTOcZJFxVqFb6JEQ9ME6g22-v6Jn4Hdg0o5D44UcADkj8cblQthIk6DaBBcEHRlt2QWC8WleWimy0AIxoywmGJIhPOwjg5wv50WB7HWVWpKd_LyQMtFDU4T2gNHLH4E9zKRzD5rHdE-fRW6nNieaG6ILgALKLi",
+           "width" : 1000
+        },
+        {
+           "height" : 3456,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/116370187950470985382\"\u003eAaron Farris\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwIh-3nxxTf4oZVhTDiGHSlhaqet8dv1ecq-rkm-dPGVJOaMafSxL_BXxHjBGepCspLO5ibO8bh2YVMFVdkuco8odiRQBUejKmjyB0Jd0owKL-hIH9vaKtnhzBpq1J51aWFUW2hbVDqhTPSstGFrMjXhDXbUzigLAcY9WUV2Tc0ZqfOK",
+           "width" : 4608
+        },
+        {
+           "height" : 3024,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/103673513333453290316\"\u003eFlyinthesky H\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwItB5E16vZQTmsw_Dw1tD_aWFQEpym9KIZbQpRUnA8GjtiluadWIiQJ2gHP8qzFp-Fp03uWSJzMnec2I-j3K0z5ZCYupctl0B64MGb421ZA4p9J81OvPdV64F1Yck6k0fqj8fIAf7FMtHGYnJxK8d0hWEf0_UH5q-YMyXO8TrbY3snE",
+           "width" : 4032
+        },
+        {
+           "height" : 3456,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/107051274202725880459\"\u003eEkaterina Stomakhina\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwJWqMafNHadChvooEDKJ5iFxYa4mlu2FRjIRUIVOQk1_IwzyXKOOQA3q0le7vGfziymS6hTOaaHNGl3qYsz1kuGRT3jNsbEABGNsKqIeWri-j4UvjMTmDldoNSKKKfd2U0bpArJFgTblIiyfaQsWIvYhstERCrHksgBZjzNS1QCgJTI",
+           "width" : 4608
+        },
+        {
+           "height" : 4032,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/101492107628420092262\"\u003eJulie Taeko 妙子\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwLZzumMVp2PGNzjMknoqOKgBkBhLhR5h9vLbMS4LPIS1w1Hx88X3aD4FGxhJmgSFiu78Z9bW3OP1SmKg2BmzaElrIKaScH18WA8pL49NqsBvU-RJLfsknUoAXcqmVO9Yg-Ntujv5muxO8B_RKxLxCrBgo8_R8VBqHgOoE6SEfvyBA9T",
+           "width" : 3024
+        },
+        {
+           "height" : 4032,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/110060451232284791204\"\u003eDAELIM SON\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwLGcLaXZ9oO7bB5Mvh01qG3hFXH6vNeYwlIFBOu6HUmGvftV7Ta0SbVElthXWCvlDrq18AFCYTo7_JlkwOh5LLo831uwVkmoxKvLm0X-sOlbOb7jgaipqM8Bgghhf3F9ur3Q7JzavawYeR2_CPXhJEsOCUSccwIT3ktT5vER-5b4CF_",
+           "width" : 3024
+        },
+        {
+           "height" : 3024,
+           "html_attributions" : [
+              "\u003ca href=\"https://maps.google.com/maps/contrib/103154680456950334009\"\u003eSixto Huitron\u003c/a\u003e"
+           ],
+           "photo_reference" : "ATtYBwIUni8TX8YgicPsIG1-DDYKW-RBFQWrGgyUmsYaLv58Uv_yqtNJ0jjx7JlSWDRIdIvGsz-eOz60oloFb4kRImZjyZkBAN6r3yA4RujxzZjY7unm3NdAa_ivrB8LaG-KqpDWoQmXrrEUzWPryVDTw2WEHq5l6dFsmyDJtUyOtYAJkHM",
+           "width" : 4032
+        }
+     ],
+     "website" : "https://bluebottlecoffee.com/cafes/bay-meadows"
+  },
+  "status" : "OK"
+}
+

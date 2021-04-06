@@ -1,6 +1,7 @@
+import { PlaceApiResponse } from "../../entities/PlaceApi.interface";
 export interface UsePlacesApi {
-  places: any;
-  findPlace: () => void;
-  selected: any;
+  places?: PlaceApiResponse[];
+  findPlaceByName: (entityName: string) => void;
+  selectedPlace?: PlaceApiResponse;
   setSelectedPlace: (index: number) => void;
 }

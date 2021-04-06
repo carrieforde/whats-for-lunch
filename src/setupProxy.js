@@ -8,4 +8,12 @@ module.exports = function (app) {
       changeOrigin: true,
     })
   );
+
+  app.use(
+    "/maps/api/place/details/json",
+    createProxyMiddleware({
+      target: "https://maps.googleapis.com",
+      changeOrigin: true,
+    })
+  );
 };
