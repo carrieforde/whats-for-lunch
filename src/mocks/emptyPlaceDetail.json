@@ -1,0 +1,28 @@
+{
+  "html_attributions" : [],
+  "result" : {
+     "address_components" : [
+     ],
+     "adr_address" : "\u003cspan class=\"street-address\"\u003e3081 S Delaware St\u003c/span\u003e, \u003cspan class=\"locality\"\u003eSan Mateo\u003c/span\u003e, \u003cspan class=\"region\"\u003eCA\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e94403\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eUSA\u003c/span\u003e",
+     "formatted_phone_number" : "(510) 653-3394",
+     "opening_hours" : {
+        "open_now" : false,
+        "periods" : [
+        ],
+        "weekday_text" : [
+           "Monday: 6:00 am – 6:00 pm",
+           "Tuesday: 6:00 am – 6:00 pm",
+           "Wednesday: 6:00 am – 6:00 pm",
+           "Thursday: 6:00 am – 6:00 pm",
+           "Friday: 6:00 am – 6:00 pm",
+           "Saturday: 6:00 am – 6:00 pm",
+           "Sunday: 6:00 am – 6:00 pm"
+        ]
+     },
+     "photos" : [
+     ],
+     "website" : "https://bluebottlecoffee.com/cafes/bay-meadows"
+  },
+  "status" : "OK"
+}
+

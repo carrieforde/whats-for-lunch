@@ -1,11 +1,24 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import Button from "./components/Button/Button";
 import Card from "./components/Card/Card";
 import LinkButton from "./components/LinkButton/LinkButton";
 import useRestaurants from "./hooks/useRestaurants/useRestaurants";
+import usePlacesApi from "./hooks/usePlacesApi/usePlacesApi";
 
 function App(): ReactElement {
   const { selected, selectRestaurant, getRestaurantPhoto } = useRestaurants();
+  const { places, findPlaceByName, setSelectedPlace } = usePlacesApi();
+
+  // TODO: Add entry form
+  // useEffect(() => {
+  //   findPlaceByName("blue bottle");
+  // }, []);
+
+  useEffect(() => {
+    if (Array.isArray(places)) {
+      setSelectedPlace(0);
+    }
+  }, [places]);
 
   return (
     <div className="App">

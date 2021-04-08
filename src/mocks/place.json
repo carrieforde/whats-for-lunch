@@ -1,0 +1,24 @@
+{
+  "business_status": "OPERATIONAL",
+  "formatted_address": "3081 S Delaware St, San Mateo, CA 94403, United States",
+  "geometry": {
+    "location": { "lat": 37.5407309, "lng": -122.2978251 },
+    "viewport": {
+      "northeast": { "lat": 37.54189612989273, "lng": -122.2964212701073 },
+      "southwest": { "lat": 37.53919647010728, "lng": -122.2991209298928 }
+    }
+  },
+  "icon":
+    "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+  "name": "Blue Bottle Coffee",
+  "opening_hours": { "open_now": true },
+  "place_id": "ChIJnW-0QB2fj4ARbC3KqnXoo80",
+  "plus_code": {
+    "compound_code": "GPR2+7V San Mateo, California",
+    "global_code": "849VGPR2+7V"
+  },
+  "price_level": 2,
+  "rating": 4.5,
+  "types": ["cafe", "food", "point_of_interest", "store", "establishment"],
+  "user_ratings_total": 592
+}
