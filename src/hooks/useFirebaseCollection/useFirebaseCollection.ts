@@ -1,13 +1,31 @@
 import { useEffect, useState } from "react";
 import firebase from "firebase";
-import { ICollectionState } from "./useFirebaseCollection.interface";
+import {
+  ICollectionState,
+  UseFirebaseCollection,
+} from "./useFirebaseCollection.interface";
 
-const useFirebaseCollection = <T>(collection: string): ICollectionState<T> => {
+const useFirebaseCollection = <T>(
+  collection: string
+): UseFirebaseCollection<T> => {
   const [state, setState] = useState<ICollectionState<T>>({
     isLoading: true,
     isError: false,
     data: null,
   });
+
+  const addData = async (data: T) => {
+    try {
+      const docRef = await firebase
+        .firestore()
+        .collection(collection)
+        .add(data);
+
+      return docRef;
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   useEffect(() => {
     const docs: T[] = [];
@@ -37,7 +55,7 @@ const useFirebaseCollection = <T>(collection: string): ICollectionState<T> => {
     return unsubscribe;
   }, [collection]);
 
-  return state;
+  return { data: state, addData };
 };
 
 export default useFirebaseCollection;

@@ -6,20 +6,29 @@ import {
   PlaceWithDetail,
 } from "../../entities/PlaceApi.interface";
 import { createRestaurantRecord } from "../../utilities/place";
+import { Restaurant } from "../../entities/restaurant.interface";
+import useFirebaseCollection from "../useFirebaseCollection/useFirebaseCollection";
 
 const PLACES_ENDPOINT = "/maps/api/place/findplacefromtext/json";
 const PLACES_DETAIL_ENDPOINT = "/maps/api/place/details/json";
 
 const usePlacesApi = (): UsePlacesApi => {
+  const { addData } = useFirebaseCollection("restaurants");
   const [places, setPlaces] = useState<PlaceApiResponse[] | undefined>(
     undefined
   );
+
   const [selectedPlace, setSelected] = useState<PlaceApiResponse | undefined>(
     undefined
   );
+
   const [selectedPlaceWithDetail, setPlaceDetails] = useState<
     PlaceWithDetail | undefined
   >(undefined);
+
+  const [newRestaurant, setNewRestaurant] = useState<Restaurant | undefined>(
+    undefined
+  );
 
   // Add state to hold place details for use outside hook.
   // Add state to hold processed record.
@@ -43,7 +52,7 @@ const usePlacesApi = (): UsePlacesApi => {
       const data = res.data;
       setPlaces(data?.candidates);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -68,10 +77,10 @@ const usePlacesApi = (): UsePlacesApi => {
       const data = res.data;
       setPlaceDetails({
         place: placeId,
-        detail: data.data?.candidates,
+        detail: data,
       });
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 
@@ -84,34 +93,18 @@ const usePlacesApi = (): UsePlacesApi => {
   useEffect(() => {
     if (selectedPlaceWithDetail) {
       const restaurant = createRestaurantRecord(selectedPlaceWithDetail);
-      console.log(restaurant);
-      // insert restaurant into firebase
+      const newDocRef = addData(restaurant);
+      console.log(newDocRef);
     }
   }, [selectedPlaceWithDetail]);
-
-  // useEffect(() => {
-  //   if (selectedPlace) {
-  //     const selectedPlaceDetails = findPlaceDetailByPlaceID(selectedPlace);
-  //     const processed = createRestaurantRecord();
-  //     // Save processed to state
-  //   }
-  // }, [selectedPlace]);
-
-  // useEffect(
-  //   () => {
-  //     // Create res
-  //     // send data to firebase. probably use something from one of the firebase hooks.
-  //   },
-  //   [
-  //     // whatever the name of the state variable is for a processed record
-  //   ]
-  // );
 
   return {
     places,
     findPlaceByName,
     selectedPlace,
     setSelectedPlace,
+    newRestaurant,
+    setNewRestaurant,
   };
 };
 

@@ -11,9 +11,10 @@ function App(): ReactElement {
   const { selected, selectRestaurant } = useRestaurants();
   const { places, findPlaceByName, setSelectedPlace } = usePlacesApi();
 
-  useEffect(() => {
-    findPlaceByName("blue bottle");
-  }, []);
+  // TODO: Add entry form
+  // useEffect(() => {
+  //   findPlaceByName("blue bottle");
+  // }, []);
 
   useEffect(() => {
     if (Array.isArray(places)) {

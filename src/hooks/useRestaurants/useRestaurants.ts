@@ -6,7 +6,9 @@ import { UseRestaurants } from "./useRestaurants.interface";
 const useRestaurants = (): UseRestaurants => {
   const {
     data: restaurantList,
-  }: { data: Restaurant[] | null } = useFirebaseCollection("restaurants");
+  }: { data: Restaurant[] | null } = useFirebaseCollection<Restaurant>(
+    "restaurants"
+  ).data;
 
   const [selected, updatedSelected] = useState<Restaurant | null>(null);
 
