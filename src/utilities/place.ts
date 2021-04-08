@@ -106,7 +106,7 @@ export function getRestaurantAddress(detail: PlaceDetailApiResponse): Address {
     return {
       street: "",
       city: "",
-      state: ",",
+      state: "",
       zipcode: "",
     };
   }

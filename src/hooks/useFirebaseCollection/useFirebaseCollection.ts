@@ -19,7 +19,7 @@ const useFirebaseCollection = <T>(
       const docRef = await firebase
         .firestore()
         .collection(collection)
-        .add(data);
+        .add(data); // TODO: really need to upsert here, may need to check restaurant name/address already exists and then add v update
 
       return docRef;
     } catch (error) {
