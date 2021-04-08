@@ -1,20 +1,35 @@
 import React, { ReactElement } from "react";
 import Button from "./components/Button/Button";
+import Card from "./components/Card/Card";
+import LinkButton from "./components/LinkButton/LinkButton";
 import useRestaurants from "./hooks/useRestaurants/useRestaurants";
 
 function App(): ReactElement {
-  const { selected, selectRestaurant } = useRestaurants();
+  const { selected, selectRestaurant, getRestaurantPhoto } = useRestaurants();
 
   return (
     <div className="App">
       <main>
         {selected && (
-          <>
-            <h1>On today&apos;s menu...</h1>
-            <p>{selected.name}</p>
-
-            <pre>{JSON.stringify(selected, null, 2)}</pre>
-          </>
+          <Card title={selected.name} imageUrl={getRestaurantPhoto()}>
+            <address>
+              {selected.address.street}
+              <br />
+              {selected.address.city}, {selected.address.state}{" "}
+              {selected.address.zipcode}
+            </address>
+            <p>
+              <a href={`tel:${selected.phone}`}>{selected.phone}</a>
+            </p>
+            <LinkButton
+              href={selected.website}
+              style="flat"
+              bgColor="--color-primary-800"
+              color="--color-primary-100"
+            >
+              Order Now
+            </LinkButton>
+          </Card>
         )}
         {!selected && (
           <>
